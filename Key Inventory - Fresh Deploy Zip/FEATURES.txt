@@ -1,0 +1,73 @@
+KEY INVENTORY - WHAT IT CAN DO
+==============================
+
+SONGS
+-----
+- Each song has a title, artist, lyrics, an Original key, and a row for every singer with their keys at
+  three levels: Basic, Intermediate and Advanced (colour coded teal, blue and rose).
+- Add or edit a song with the + button. Every key is a small wheel: swipe it up or down (or use the arrow
+  keys). Tap the check button when you are done.
+- "Find a song online" (the globe button) looks up song names and lyrics from free libraries. For songs not
+  there, use the Open on Google / Ultimate Guitar buttons, copy, then Paste from clipboard. "Remove chord
+  lines" keeps just the words, and the key is read from a "Key:" line or guessed from the chords.
+- Settings > Singer photos: add pictures for singers, and tap the star to make someone a default singer
+  (added to every new song).
+- Tap a singer's name on a song page to highlight them. Tap any key to hear it.
+- On wide screens (about 1140 pixels and more) a grid button in the header asks how many song tiles to show
+  side by side (1 to 4, as many as fit). The choice is remembered on that device.
+- Last used key: when a song is shown in Play mode its key is remembered for that singer. The song list,
+  the song page ("Key history") and the key chooser show it, with a warning when a key was not used for
+  about 3 months or the singer's keys changed.
+
+SETLISTS
+--------
+- "+ Add to setlist" on a song page, or the "Add songs" search on the Setlist tab. Songs you add land in a
+  "New songs" box; drag them into groups (Praise, Worship ...), reorder songs and groups with the grips.
+- Each row shows the song, who sings it and the key. Tap the singer's picture to choose the singer; tap the
+  key to choose Basic, Intermediate or Advanced (you hear it).
+- Settings > "Share a setlist": Copy text, or PDF (a printable page).
+- While someone is playing a setlist it is locked for editing for everyone else (songs cannot be added,
+  moved or removed, nor can it be renamed, cleared or deleted). You can still change the song, singer or
+  key from Play mode. It unlocks when the player leaves Play mode.
+
+PLAY MODE
+---------
+- Shows just the song, the singer and the key, big and in colour, on any screen from a phone to a TV.
+  The pencil on a song opens an edit view (change the song, singer or key). A single song looks the same
+  as one card of a group.
+- Key pad: a soft sustained sound plays the key on screen (root, fifth, octave). When you move to a song in
+  another key the old key fades out while the new one rises. In a group, tap another song's key to hear
+  that one. The speaker button mutes it (remembered on that device).
+- Chat and reactions: only in Play mode, only with the members who are in the same setlist. Joel in setlist
+  A and Mia in setlist B cannot see each other's messages. Emoji reactions float up on everyone's screen.
+- Who is with you: pictures and names of the members in the same setlist, and a small notice when
+  someone joins.
+- Invite: the Invite button sends an invitation to join your Play to the band members you tick. They are
+  told wherever they are in the app, even while they are playing.
+
+BAND SYNC (needs the Firebase setup in CLOUD-SETUP.txt)
+-------------------------------------------------------
+- Register with an email and a password. Your nickname starts as the first word of your email (use ONE short
+  word your friends will recognize). Choose your part in the band if you like.
+- Search a friend by email, tap Add friend. They tap Accept (or Decline: you get a cheerful card). Let one
+  person (usually the worship leader) add everyone so the whole band is in one list.
+- Settings > Band & sync > Band members lists everyone grouped by their part (not a hierarchy).
+- Songs and setlists stay in sync. The same song from two people is kept once and shows who added it.
+  A song you add or edit is sent to the others only after you tap the check button.
+- When a member is playing: a short notice ("Joel is playing"), sound bars on the setlist's card, and a
+  pulsing yellow Join button beside Play. Join makes your Play mode follow the player's. If several
+  setlists are being played, Join asks whom to follow. When you open the app while someone plays, a pop-up
+  lists every player with the setlist, how long they have played and who is with them.
+- A person only shows as playing while their app keeps reporting in: it stops saying "playing" after about
+  2 minutes in the background or 45 minutes without a touch.
+- Phone alerts (Settings > Notifications > Turn on): when a friend adds or changes songs, starts playing, or
+  invites you. They arrive while the app is open or in the background.
+
+LOOK AND DATA
+-------------
+- Settings: day and night mode are a sun and a moon icon. The small (i) buttons open a short explanation.
+- Settings > Tutorial: an animated tour, plus short ones for the setlist and for Play mode.
+- Settings > Your data: Add sample (a few example songs; Remove sample takes only those away), Backup and
+  Restore.
+- The Love Me Jesus Said Ministry logo is the app mark, the browser tab icon and the Home Screen icon, with
+  the dove outline from it faintly behind Play mode. It is built into index.html.

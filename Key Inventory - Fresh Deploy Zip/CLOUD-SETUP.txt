@@ -1,0 +1,92 @@
+BAND SYNC - FIREBASE SETUP GUIDE
+================================
+
+What your band gets
+-------------------
+A new person only has to REGISTER WITH THEIR EMAIL (and a password). Then they search for a friend by
+email and tap "Add friend". The friend sees a card and taps Accept, and from then on you are band
+members together and your songs and setlists stay in sync.
+
+Everyone except the person who hosts the app does NOTHING else: no settings to paste, no rules, no codes.
+The host does the steps below ONE TIME (about 10 minutes). It uses Firebase, Google's free service (the
+"Spark" plan is plenty for a church band).
+
+HOST SETUP (one time)
+---------------------
+1. Go to https://console.firebase.google.com, sign in with Google, click "Create a project", name it
+   (for example "Key Inventory"). You can turn Google Analytics off.
+
+2. Turn on sign-in:  Authentication > Get started > Sign-in method > Email/Password > switch "Enable"
+   on > Save.
+
+3. Make the database:  Firestore Database (it may be under "Databases & Storage") > Create database >
+   keep "Production mode" > pick a location near you > Create.
+
+4. Publish the rules. Open the file  firestore.rules  from this folder (Notepad is fine), press Ctrl+A
+   then Ctrl+C. In Firebase go to Firestore Database > Rules tab, delete what is there, press Ctrl+V,
+   and click "Publish". (The same rules cover everything the app does: songs, setlists, members, who is
+   playing, play invitations and chat. You do not need to change them for new versions of the app.)
+
+5. Get your project's settings:  click Settings (gear, left menu) > General > scroll to "Your apps" >
+   click the web icon </> > give it any nickname > Register app. Firebase shows a block like:
+
+       const firebaseConfig = {
+         apiKey: "AIza...",
+         authDomain: "your-project.firebaseapp.com",
+         projectId: "your-project",
+         storageBucket: "your-project.firebasestorage.app",
+         messagingSenderId: "1234567890",
+         appId: "1:1234567890:web:abcdef"
+       };
+
+6. Open  firebase.js  from this folder (Notepad). Replace each PASTE_... value with the matching value
+   from the block (keep the quote marks). Save.
+
+7. Upload ALL the files of this folder (index.html, firebase.js, sw.js, manifest.webmanifest and the three
+   icon-*.png files) TOGETHER to your website (Netlify, GitHub Pages, ...). Open the website address
+   (https://...). Done: anybody who opens it can register.
+
+OPTIONAL: Firebase Hosting (no firebase.js to fill in at all)
+-------------------------------------------------------------
+If you host the app on Firebase Hosting, the app finds your project's settings by itself (steps 5 and 6
+are not needed). With the Firebase tools installed, run "firebase deploy" in this folder: it publishes the
+website AND the rules (firebase.json and firestore.rules are included for that).
+
+TEST IT WITH TWO PHONES
+-----------------------
+1. Phone A: open the address, Settings > Band & sync, register with an email and a password.
+2. Phone B: the same, with another email.
+3. Phone A: Settings > Band & sync > search for B's email > Add friend.
+4. Phone B: a card appears: tap Accept.
+5. Add a song on A: it appears on B within a few seconds (after A taps the check button).
+6. On A open a setlist and tap Play; B shows a short "is playing" notice and a yellow Join button.
+
+IF SOMETHING DOES NOT WORK
+--------------------------
+- The app says sync is "not switched on yet": firebase.js still has its PASTE_ words, or it was not
+  uploaded next to index.html. Fill it in, upload again, then reload the page.
+- Works in Safari but not from the iPhone Home Screen: the Home Screen app keeps its OWN saved data. If you
+  once pasted your Firebase settings inside the app, they are saved only for Safari. Put them in
+  firebase.js (Settings > Band & sync > "Save firebase.js" in Safari makes the file for you), upload it
+  next to index.html, remove the Home Screen app, reload the site in Safari and add it again. Then sign in
+  once inside the Home Screen app.
+- "Check connection" (Settings > Band & sync) tests each step and says which one fails.
+- You see old behaviour after an update: phones keep the old page. Reload it, or remove the Home Screen
+  app and add it again.
+- A person keeps showing as playing: Settings > Band & sync > Live play shows who the app thinks is
+  playing. For your own other device there is a "Remove it" button. In the Firebase console you can also
+  delete the document in workspaces > (your band) > live.
+- Phone alerts do nothing: they need sw.js, manifest.webmanifest and the icon files uploaded next to
+  index.html, and "Turn on" in Settings > Notifications. On iPhone the app must be added to the Home
+  Screen first. If the app is fully closed, alerts wait until it is opened again (alerts to a fully
+  closed phone need a push server, which is not included).
+- Sign-in says the email is already in use: that person already has an account, so they should sign in.
+  Passwords are reset in Firebase console > Authentication > Users.
+
+DELETING DATA
+-------------
+Back up first (Settings > Your data > Backup). Firebase console > Authentication > Users deletes sign-in
+accounts. Firestore Database > Data > three-dot menu > Delete collection deletes data: users, emails and
+workspaces hold the accounts' details and the band's songs, setlists, members, play records and chat. Deleting
+an account does not delete its data, and deleting the band's data also removes those songs from members'
+devices when they next sync. Nothing can be undone.
