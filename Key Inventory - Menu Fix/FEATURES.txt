@@ -1,0 +1,185 @@
+KEY INVENTORY - WHAT IT CAN DO
+==============================
+
+HOME PAGE
+---------
+- The Home page is the first thing you see every time the app opens, even on a slow connection (a Home-shaped
+  placeholder shows for a moment while the app starts, so the song list never flashes first).
+- The app opens on a simple Home page: a big Play button (it plays your latest setlist), six big buttons
+  (Songs, Line-up, Setlists, Add a song, Band, Settings), and a "More" button that opens the rest:
+  Find a song online, Share a setlist, Singer photos, Notifications, Key sound, Tutorial, Backup, Restore, Sample songs and (on
+  wide screens) the tile chooser.
+- The sun and moon at the top switch day and night mode.
+- When a band member is playing, a yellow Join card appears at the top.
+- The Home tab (house icon) in the sidebar, and a tap on the logo, bring you back to Home from anywhere.
+
+KEY CHANGE (per singer)
+-----------------------
+- A key change belongs to one singer's key, and you type it yourself. Example: Mark sings this song in G and it
+  changes to A. In the song editor, every key has a small button under it ("+ change"). Tap it, or tap the key
+  itself, and the app asks "Does this key change? Tap the key it changes to." Tap the new key (Major or Minor)
+  and Save, or choose "No key change" to take it away. The button then shows "\u2192 A".
+- Basic, Intermediate and Advanced each have their own change, because they are different keys. A key change
+  needs a key: if you clear the key, its change goes too. Nothing is worked out for you and nothing is changed
+  for the other singers.
+- It is saved with the song. The song page shows "\u2192 A" under that singer's key. The setlist shows a gold
+  "\u2192 A" tag next to the singer's chosen key. Play mode shows a gold "\u2191 A" badge on the corner of the
+  key (tap it to hear the new key), and the Play tile says "Key change \u2192 A". It travels to the band with the
+  song.
+- Songs that had one key change for the whole song (an earlier version) are turned into a change for each
+  singer, moving every singer's key by the same number of steps. You can then edit each one.
+
+THE SETLIST ROW (calmer)
+------------------------
+- Each song row now has one "\u22EF" button instead of three small buttons. It opens a small menu: Hear the key,
+  Hear the key change (when the song has one), Move up, Move down and Remove from setlist. The small facts
+  (Video, BPM) sit on one quiet line under the title, and the singer, the key and the key change share the next
+  line. Tap anywhere else, or press Escape, to close the menu. Dragging a song to a group works as before.
+
+TEMPO (BPM)
+-----------
+- Every song can have a tempo in beats per minute. The song page has a "Tempo" card with a "Find BPM"
+  button, the song editor has a "Tempo" field, and a saved tempo shows as "\u2669 96 BPM" on the song list
+  and on the song's row in a setlist. The tempo travels to the band with the song.
+- "Find BPM" opens a window with three ways to get it, plus "Or type it":
+  Search - looks the song up by title and artist in a public music catalogue (Deezer) and lists the matches
+  with their BPM. Tap one to use it. Many songs, hymns especially, have no BPM listed there.
+  Listen - the app listens through the microphone for 15 seconds while the song plays near the phone (or on
+  another device) and measures the tempo. If the song has a lyrics video, "Play the lyrics video here" shows
+  the video in the window. The app cannot read the sound of a YouTube video directly, so it hears it through
+  the microphone. The microphone stops as soon as you close the window.
+  Tap - tap the big circle on every beat; after three taps it shows the BPM.
+- The listening result also offers half and double (for example 64, 128, 256 for a song heard at 128),
+  because a computer cannot always tell whether a song feels slow or fast. Tap the one that feels right.
+- On a song that has a lyrics video, the video card has "Detect BPM from the video", which opens the Listen
+  way straight away.
+- In Play mode the tempo shows as "\u2669 96 BPM" under the singer on each song card, and on the song tiles
+  of a setlist.
+- METRONOME in Play mode: the metronome button in the top bar (next to the speaker, showing the BPM) switches a
+  soft click on or off. It is off until you turn it on, and it remembers your choice. When it is on it clicks
+  at the tempo of the song you are looking at, with a higher click on the first beat of each bar (4 beats).
+  Tap another song in a group, or press Next or Previous, and it changes to that song's tempo and starts
+  counting again. A song with no tempo is silent (the button shows a dash). The card whose tempo is clicking is
+  outlined in gold and the tempo and the button flash on the beat. It stops when you close Play or leave the app
+  and does not affect the key sound.
+
+LYRICS VIDEO LINK
+-----------------
+- Every row of the song list has a small "Find video" button (or a red "Video" button once a link is saved).
+  The song page has a "Lyrics video" card too, and the song editor has a "Lyrics video" field.
+- "Find video" opens a window: step 1 opens a YouTube search for the song's title, artist and "lyrics" in a
+  new tab; step 2: copy the link of the video you like, come back, tap Paste (or press and hold in the box and
+  choose Paste) and Save link. Only real web links are accepted.
+- The saved link shows on the song page ("Open the video"), in the song list and on the song's row in a
+  setlist, where "Video" opens it in a new tab. The link travels to the band with the song. Change link and
+  Remove are on the song page.
+- The app cannot search YouTube by itself (YouTube needs its own key for that), so the search opens in
+  YouTube and you paste the link back.
+
+LINE-UP AND SONG TYPES
+----------------------
+- When you add or edit a song, "Song type" lets you say what kind of song it is: Praise, Worship, Hymn,
+  Upbeat, Slow, Opening, Closing, Offering or Special, or your own type ("Your own type" + Add type). Tap the
+  chosen type again to clear it. The type is shown on the song page and travels to the band with the song.
+- The Line-up page (the Line-up tab, or the Line-up button on Home) opens a LIST of your saved line-ups.
+  Tap "+ New line-up" to start one, or tap a saved one to open it. Each card shows the name, the number of
+  songs and groups, and when it was last changed, with "Make setlist" and a delete button. The Back button
+  goes back one step: from an open line-up to the list, and from the list to the screen you came from.
+- An open line-up has type tiles on top (Praise, Worship, Hymn ... with how many songs each has) and the
+  line-up below. It has a name (for example "Sunday Nov 16") and named groups. It starts with Opening,
+  Praise, Worship, Offertory, Response and Closing; rename any of them, add your own (or a suggestion), move
+  them with the arrows, or remove them. Tap "Save line-up" to save it and go back to the list. Your changes are
+  also kept as you go, and an empty line-up you never touched is not kept.
+- To add songs: tap "+ Add songs to Worship" under a group (or pick the group inside the pop-up), then tap a
+  type tile. A pop-up opens with a search box and the songs of that type; tap a song to put it in the chosen
+  group, tap it again to take it out. A song already in another group says so and moves when you tap it.
+  The line-up shows only song names: no singers or keys yet.
+- Recently used songs: a yellow "Used 3 weeks ago" tag marks every song that was played in the last 2 months,
+  in the pop-up list and in your line-up, and each type tile says how many of its songs were used lately.
+  The pop-up has a switch, "Hide songs used in the last 2 months", to help you avoid repeating songs (it is
+  remembered, and a song already in your line-up always stays visible). A song counts as played when it is
+  opened in Play mode on any phone in the band, even if it has no singer or key yet.
+- "Create a setlist from it" (or "Make setlist" on a card) makes a setlist with the line-up's name and exactly
+  its groups, each song already in its group. "Add to it" (an existing setlist) puts the songs into the
+  setlist's group with the same name and creates the group if it is missing; songs already in the setlist are
+  skipped. In a setlist, "Import a line-up" lets you choose one of the saved line-ups. Then choose each singer
+  and key. Line-ups stay on your own device and are part of a Backup.
+- Sending a line-up to a setlist never erases it. The line-up keeps all its songs, shows "Added to a setlist"
+  with the setlist's name (and an Open button), and marks each song "In setlist" or "Not in a setlist yet"
+  (for example a song you add afterwards, or one taken out of the setlist). The cards in the list show
+  "In setlist: <name>". Tap "Add to it" to send the songs that are still missing.
+- Every NEW setlist (made another way) starts with the same six groups. Rename, delete or re-order them (Edit,
+  or the arrows, or drag a group by its grip), or add your own with + Group. Setlists you already have are not
+  changed.
+
+SONGS
+-----
+- Each song has a title, artist, lyrics, an Original key, and a row for every singer with their keys at
+  three levels: Basic, Intermediate and Advanced (colour coded teal, blue and rose).
+- Add or edit a song with the + button. Every key is a small wheel: swipe it up or down (or use the arrow
+  keys). Tap the check button when you are done.
+- "Find a song online" (the globe button) looks up song names and lyrics from free libraries. For songs not
+  there, use the Open on Google / Ultimate Guitar buttons, copy, then Paste from clipboard. "Remove chord
+  lines" keeps just the words, and the key is read from a "Key:" line or guessed from the chords.
+- Settings > Singer photos: add pictures for singers, and tap the star to make someone a default singer
+  (added to every new song).
+- Tap a singer's name on a song page to highlight them. Tap any key to hear it.
+- On wide screens (about 1140 pixels and more) a grid button in the header asks how many song tiles to show
+  side by side (1 to 4, as many as fit). The choice is remembered on that device.
+- Last used key: when a song is shown in Play mode its key is remembered for that singer. The song list,
+  the song page ("Key history") and the key chooser show it, with a warning when a key was not used for
+  about 3 months or the singer's keys changed.
+
+SETLISTS
+--------
+- "+ Add to setlist" on a song page, or the "Add songs" search on the Setlist tab. Songs you add land in a
+  "New songs" box; drag them into groups (Praise, Worship ...), reorder songs and groups with the grips.
+- Each row shows the song, who sings it and the key. Tap the singer's picture to choose the singer; tap the
+  key to choose Basic, Intermediate or Advanced (you hear it).
+- Settings > "Share a setlist": Copy text, or PDF (a printable page).
+- While someone is playing a setlist it is locked for editing for everyone else (songs cannot be added,
+  moved or removed, nor can it be renamed, cleared or deleted). You can still change the song, singer or
+  key from Play mode. It unlocks when the player leaves Play mode.
+
+PLAY MODE
+---------
+- Shows just the song, the singer and the key, big and in colour, on any screen from a phone to a TV.
+  The pencil on a song opens an edit view (change the song, singer or key). A single song looks the same
+  as one card of a group.
+- Key pad: a soft sustained sound plays the key on screen (root, fifth, octave). When you move to a song in
+  another key the old key fades out while the new one rises. In a group, tap another song's key to hear
+  that one. The speaker button mutes it (remembered on that device).
+- Chat and reactions: only in Play mode, only with the members who are in the same setlist. Joel in setlist
+  A and Mia in setlist B cannot see each other's messages. Emoji reactions float up on everyone's screen.
+- Who is with you: pictures and names of the members in the same setlist, and a small notice when
+  someone joins.
+- Invite: the Invite button sends an invitation to join your Play to the band members you tick. They are
+  told wherever they are in the app, even while they are playing.
+
+BAND SYNC (needs the Firebase setup in CLOUD-SETUP.txt)
+-------------------------------------------------------
+- Register with an email and a password. Your nickname starts as the first word of your email (use ONE short
+  word your friends will recognize). Choose your part in the band if you like.
+- Search a friend by email, tap Add friend. They tap Accept (or Decline: you get a cheerful card). Let one
+  person (usually the worship leader) add everyone so the whole band is in one list.
+- Settings > Band & sync > Band members lists everyone grouped by their part (not a hierarchy).
+- Songs and setlists stay in sync. The same song from two people is kept once and shows who added it.
+  A song you add or edit is sent to the others only after you tap the check button.
+- When a member is playing: a short notice ("Joel is playing"), sound bars on the setlist's card, and a
+  pulsing yellow Join button beside Play. Join makes your Play mode follow the player's. If several
+  setlists are being played, Join asks whom to follow. When you open the app while someone plays, a pop-up
+  lists every player with the setlist, how long they have played and who is with them.
+- A person only shows as playing while their app keeps reporting in: it stops saying "playing" after about
+  2 minutes in the background or 45 minutes without a touch.
+- Phone alerts (Settings > Notifications > Turn on): when a friend adds or changes songs, starts playing, or
+  invites you. They arrive while the app is open or in the background.
+
+LOOK AND DATA
+-------------
+- Settings: day and night mode are a sun and a moon icon. The small (i) buttons open a short explanation.
+- Settings > Tutorial: an animated tour, plus short ones for the setlist and for Play mode.
+- Settings > Your data also shows the app's version and a "Check for a newer version" button.
+- Settings > Your data: Add sample (a few example songs; Remove sample takes only those away), Backup and
+  Restore.
+- The Love Me Jesus Said Ministry logo is the app mark, the browser tab icon and the Home Screen icon, with
+  the dove outline from it faintly behind Play mode. It is built into index.html.
